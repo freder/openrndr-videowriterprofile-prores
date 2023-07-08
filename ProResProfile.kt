@@ -1,4 +1,5 @@
-import org.openrndr.ffmpeg.VideoWriterProfile
+package org.openrndr.ffmpeg
+
 
 // https://ottverse.com/ffmpeg-convert-to-apple-prores-422-4444-hq/
 class ProResProfile : VideoWriterProfile() {

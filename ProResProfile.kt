@@ -1,6 +1,11 @@
 package org.openrndr.ffmpeg
 
 
+fun ScreenRecorder.prores(configure: ProResProfile.()->Unit) {
+    profile = ProResProfile().apply(configure)
+}
+
+
 // https://ottverse.com/ffmpeg-convert-to-apple-prores-422-4444-hq/
 class ProResProfile : VideoWriterProfile() {
     override var fileExtension = "mkv"
